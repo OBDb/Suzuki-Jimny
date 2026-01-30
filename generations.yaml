@@ -1,3 +1,6 @@
+references:
+  - "https://en.wikipedia.org/wiki/Suzuki_Jimny"
+
 generations:
   - name: "First Generation (LJ10/20)"
     start_year: 1970
