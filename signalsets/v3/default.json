@@ -1,4 +1,31 @@
 { "commands": [
-
+{ "hdr": "7DF", "dbg": true, "cmd": {"21": "00"}, "freq": 1,
+  "signals": [
+    {"id": "JIMNY_ELOAD_CALC",       "path": "Engine",   "fmt": {"bix": 104, "len": 8,  "max": 255,   "unit": "percent"           }, "name": "Calculated engine load",            "suggestedMetric": "engineLoad"},
+    {"id": "JIMNY_ECT",              "path": "Engine",   "fmt": {"bix": 112, "len": 8,  "max": 255,   "unit": "celsius"           }, "name": "Engine coolant temperature",        "suggestedMetric": "engineCoolantTemperature"},
+    {"id": "JIMNY_STFT_B1",          "path": "Fuel",     "fmt": {"bix": 120, "len": 8,  "max": 255,   "unit": "percent"           }, "name": "Short term fuel trim, bank 1",      "suggestedMetric": "shortTermFuelTrim"},
+    {"id": "JIMNY_LTFT_B1",          "path": "Fuel",     "fmt": {"bix": 128, "len": 8,  "max": 255,   "unit": "percent"           }, "name": "Long term fuel trim, bank 1"},
+    {"id": "JIMNY_STFT_B2",          "path": "Fuel",     "fmt": {"bix": 136, "len": 8,  "max": 255,   "unit": "percent"           }, "name": "Short term fuel trim, bank 2",      "suggestedMetric": "shortTermFuelTrim"},
+    {"id": "JIMNY_LTFT_B2",          "path": "Fuel",     "fmt": {"bix": 144, "len": 8,  "max": 255,   "unit": "percent"           }, "name": "Long term fuel trim, bank 2"},
+    {"id": "JIMNY_IMAP",             "path": "Engine",   "fmt": {"bix": 152, "len": 8,  "max": 255,   "unit": "kilopascal"        }, "name": "Intake manifold absolute pressure"},
+    {"id": "JIMNY_RPM",              "path": "Movement", "fmt": {"bix": 160, "len": 16, "max": 65535, "unit": "rpm"               }, "name": "Engine RPM"},
+    {"id": "JIMNY_VEHICLE_SPEED",    "path": "Movement", "fmt": {"bix": 176, "len": 8,  "max": 255,   "unit": "kilometersPerHour" }, "name": "Vehicle speed",                     "suggestedMetric": "speed"},
+    {"id": "JIMNY_TIMING_ADVANCE",   "path": "Engine",   "fmt": {"bix": 184, "len": 8,  "max": 255,   "unit": "degrees"           }, "name": "Timing advance"},
+    {"id": "JIMNY_INTAKE_AIR_T",     "path": "Engine",   "fmt": {"bix": 192, "len": 8,  "max": 255,   "unit": "celsius"           }, "name": "Intake air temperature"},
+    {"id": "JIMNY_MAF",              "path": "Engine",   "fmt": {"bix": 200, "len": 8,  "max": 255,   "unit": "gramsPerSecond"    }, "name": "Mass air flow",                     "suggestedMetric": "massAirFlow"},
+    {"id": "JIMNY_THROTTLE",         "path": "Engine",   "fmt": {"bix": 216, "len": 8,  "max": 255,   "unit": "percent"           }, "name": "Throttle position"},
+    {"id": "JIMNY_OXYGEN_S1B1",      "path": "Engine",   "fmt": {"bix": 232, "len": 8,  "max": 255,   "unit": "volts"             }, "name": "Oxygen sensor 1 bank 1"},
+    {"id": "JIMNY_OXYGEN_S2B1",      "path": "Engine",   "fmt": {"bix": 240, "len": 8,  "max": 255,   "unit": "volts"             }, "name": "Oxygen sensor 2 bank 1"},
+    {"id": "JIMNY_OXYGEN_S1B2",      "path": "Engine",   "fmt": {"bix": 248, "len": 8,  "max": 255,   "unit": "volts"             }, "name": "Oxygen sensor 1 bank 2"},
+    {"id": "JIMNY_OXYGEN_S2B2",      "path": "Engine",   "fmt": {"bix": 256, "len": 8,  "max": 255,   "unit": "volts"             }, "name": "Oxygen sensor 2 bank 2"},
+    {"id": "JIMNY_RPM_IDLE",         "path": "Movement", "fmt": {"bix": 280, "len": 8,  "max": 255,   "unit": "rpm"               }, "name": "Engine RPM, commanded"},
+    {"id": "JIMNY_THROTTLE_V",       "path": "Battery",  "fmt": {"bix": 288, "len": 8,  "max": 255,   "unit": "volts"             }, "name": "Throttle position sensor voltage"},
+    {"id": "JIMNY_FIT_B1",           "path": "Fuel",     "fmt": {"bix": 296, "len": 16, "max": 65535, "unit": "milliseconds"      }, "name": "Fuel injection timing bank 1"},
+    {"id": "JIMNY_FIT_B2",           "path": "Fuel",     "fmt": {"bix": 312, "len": 16, "max": 65535, "unit": "milliseconds"      }, "name": "Fuel injection timing bank 2"},
+    {"id": "JIMNY_BARO",             "path": "Engine",   "fmt": {"bix": 328, "len": 8,  "max": 255,   "unit": "kilopascal"        }, "name": "Barometric pressure"},
+    {"id": "JIMNY_TFT",              "path": "Fuel",     "fmt": {"bix": 384, "len": 8,  "max": 255,   "unit": "percent"           }, "name": "Total fuel trim"},
+    {"id": "JIMNY_CONTROL_MODULE_V", "path": "Battery",  "fmt": {"bix": 392, "len": 8,  "max": 255,   "unit": "volts"             }, "name": "Control module voltage",            "suggestedMetric": "starterBatteryVoltage"},
+    {"id": "JIMNY_FLI",              "path": "Fuel",     "fmt": {"bix": 416, "len": 8,  "max": 255,   "unit": "percent"           }, "name": "Fuel level",                        "suggestedMetric": "fuelTankLevel"}
+  ]}
 ]
 }
