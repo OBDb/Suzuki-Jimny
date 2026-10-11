@@ -1,7 +1,7 @@
 command_id: 7E0.7E8.2128
 test_cases:
 - expected_values:
-    SUZUKI_ODO: 16763391
+    JIMNY_2128_RAW: 16763391
   response: |-
     7E810426128FFC9FF00
     7E821FFCFFF00FFFFFF
